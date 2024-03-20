@@ -55,5 +55,5 @@ function declararVariables() {
     let ind_2 = array[5];
     let ind_3 = array[0];
     let sum_ind = ind_1 + ind_2 + ind_3;
-    alert("La suma de el ultimo valor, el penultimo mas el primer valor es: " + sum_ind);
+    alert("La suma de el ultimo valor, el penultimo y el primer valor es: " + sum_ind);
     }
