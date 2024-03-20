@@ -16,7 +16,7 @@ let decimal = 1.3;
 //Variable tipo cadena
 let string = "Hello World";
 //Variable tipo boolean
-const Booleano = true;
+let Booleano = true;
 //Variable Array(Arreglo)
 let myArray = ["Cristóbal", 18 , "Aron" , 17];
 //Variable tipo objeto
@@ -33,10 +33,10 @@ let objeto = {
 let indefinido;
 //Variable null
 let variableNula = null;
-//Variable tipo operación
+//Función tipo operación
 function suma(num1, num2){
     return num1 + num2;
 };
-console.log(
-            suma(10,5)
-    );
+console.log("Entero: " + int + "\nDecimal: " + decimal + "\nCadena: " + string + "\nBooleano: " + Booleano + 
+"\nArreglo: " + myArray + "\nObjeto: " + JSON.stringify(objeto) + "\nIndefinido: " + indefinido + "\nNulo: " + variableNula + "\nResultado función: " + suma(5,10));
+console.log(suma(5,10));
