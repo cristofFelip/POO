@@ -1,7 +1,7 @@
 function contarWhile(){
     let contador = 0;
     let numerosPares = [];
-
+    
     while (contador <= 20){
         array.push(contador);
         contador+=2;
