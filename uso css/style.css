@@ -1,0 +1,19 @@
+body{
+    padding: 15px;
+}
+.container{
+    width: 100%;
+    height: 1000px;
+    background-color: grey;
+    padding: 20px;
+}
+.nav-verde{
+    width: 100%;
+    height: 200px;
+    background-color: green;
+}
+.nav-amarillo{
+    width: 30%;
+    height: 400px;
+    background-color:blue;
+}
