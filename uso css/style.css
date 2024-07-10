@@ -12,8 +12,49 @@ body{
     height: 200px;
     background-color: green;
 }
-.nav-amarillo{
+.nav-azul{
+    width: 15%;
+    height: 600px;
+    margin-top: 30px;
+    background-color:rgb(0, 0, 255);
+}
+.nav-rojo{
+    position: relative;
+    width: 79%;
+    height: 750px;
+    background-color: rgb(255, 0, 0);
+    left: 350px;
+    bottom: 600px;
+}
+.nav-amarillo1{
+    position: relative;
+    top: 40px;
+    left: 50px;
     width: 30%;
     height: 400px;
-    background-color:blue;
+    background-color: yellow;
+}
+.nav-amarillo2{
+    position: relative;
+    left: 520px;
+    bottom: 360px;
+    width: 30%;
+    height: 400px;
+    background-color: yellow;
+}
+.nav-amarillo3{
+    position: relative;
+    left: 1000px;
+    bottom: 760px;
+    width: 30%;
+    height: 400px;
+    background-color: yellow;
+}
+.nav-morado{
+    position: relative;
+    left: 50px;
+    bottom: 720px;
+    width: 95%;
+    height: 200px;
+    background-color: purple;
 }
