@@ -1,0 +1,42 @@
+body{
+    background-image: url(fondo-mesa-poquer-diseno-plano_23-2151047005.jpg);
+}
+.box{
+    background-color:blueviolet;
+    position: absolute;
+    left: 550px;
+    top: 200px;
+    padding: 150px;
+
+}
+.boton{
+    font-style:normal;
+    color:white;
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 50px;
+    position: relative;
+    left: 225px
+}
+.boton:active{
+    color:whitesmoke;
+    background-color:rgb(54, 5, 99);
+}
+.boton:hover{
+    cursor:pointer;
+}
+.text{
+    margin-left: 170px;
+    margin-right: auto;
+    position: absolute;
+    padding:7px 19px ;
+}
+.Titulo{
+    position: absolute;
+    left: 325px;
+    bottom: 300px;
+}
+.result{
+    position: absolute;
+    left: 400px;
+}

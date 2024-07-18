@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Counting Cards</title>
+  <title>Contar Cartas</title>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Counting Cards</h1>
-  <p>Enter a list of card values (numbers or strings) separated by commas:</p>
-  <input type="text" id="cardInput" placeholder="Ingrese valor de Cartas">
-  <button onclick="displayResult()">Check Counts</button>
-  <p id="result"></p>
+  <div class="box">
+  <h1 class="Titulo">Contar Cartas</h1>
+  <p>Ingresa las cartas (Separadas por comas) para saber si apostar(bet) o mantener(hold)</p>
+  <input class="text" type="text" id="cardInput" placeholder="Ingrese valor de Cartas">
+  <button onclick="displayResult()" class="boton">Check Counts</button>
+  <p id="result" class="result"></p>
+  </div>
 </body>
 </html>
