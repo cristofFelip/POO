@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción con Funciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn-custom {
+            background-color: gray;
+            color: lightgray;
+        }
+        .btn-custom.active {
+            background-color: green;
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="text-center">Interacción con Funciones</h1>
+                <div class="d-flex flex-column align-items-start">
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); leerDatosPersona()">Leer Datos de Persona</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); procesarNumero()">Procesar Número</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); ordenarNumeros()">Ordenar Números</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); promedioNumeros()">Calcular Promedio</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumaPrimerosNaturales()">Suma de N Primeros Naturales</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); primerosPares()">Primeros 100 Números Pares</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); primerosImpares()">Primeros 100 Números Impares</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumarCienNumeros()">Sumar 100 Números</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumarNNumeros()">Sumar N Números</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); operacionesNumeros()">Operaciones con 2 Números</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumarNPares()">Sumar N Números Pares</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumarPrimerosNPares()">Sumar Primeros N Pares</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumarNImpares()">Sumar N Números Impares</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumarPrimerosNImpares()">Sumar Primeros N Impares</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); sumarPrimerosMultiplesDeTres()">Sumar N Primeros Múltiplos de 3</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); diagramaFlujoFactorial()">Diagrama de Flujo para Factorial</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); celsiusAFahrenheit()">Conversión Celsius a Fahrenheit</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); palabraMasLarga()">Buscar Palabra Más Larga</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); numerosPrimos()">Imprimir Números Primos</button>
+                    <button class="btn btn-custom mb-2" onclick="handleButtonClick(this); contadorCaracteres()">Contador de Caracteres</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2 class="mt-4">Resultados:</h2>
+                <div id="resultado" class="border p-3" style="max-height: 300px; overflow-y: auto;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Ejercicio_1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function handleButtonClick(button) {
+            // Remover la clase 'active' de todos los botones
+            const buttons = document.querySelectorAll('.btn-custom');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Agregar la clase 'active' al botón presionado
+            button.classList.add('active');
+        }
+    </script>
+</body>
+</html>
