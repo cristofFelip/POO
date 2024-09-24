@@ -42,7 +42,7 @@ function promedioNumeros() {
 function sumaPrimerosNaturales() {
     const N = parseInt(prompt("Ingrese el valor de N:"));
     let suma = 0;
-    for (let i = 1; i <= N; i++) {
+    for (let i = 0; i <= N; i++) {
         suma += i;
     }
     mostrarResultado(`Suma de los primeros ${N} números naturales: ${suma}`);
@@ -66,7 +66,7 @@ function primerosImpares() {
 
 function sumarCienNumeros() {
     let suma = 0;
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 5; i++) {
         const num = parseFloat(prompt(`Ingrese el número ${i + 1}:`));
         suma += num;
     }
