@@ -27,3 +27,26 @@ function texto(button) {
     // Definición de Dojonary
     alert("¿de verdad tenemos que hacer esta parte?");
 }
+function addDefinition(button) {
+    // Obtener el contenedor donde se añadirán las definiciones
+    const definitionContainer = document.querySelector('.row');
+
+    // Crear un nuevo elemento de definición
+    const newDefinition = document.createElement('div');
+    newDefinition.className = 'box_definition';
+    newDefinition.innerHTML = `
+        <div class="left">
+            <h1>nueva palabra</h1>
+            <p><em>noun</em></p>
+            <p>Plural: <em>nuevas palabras</em></p>
+            <button class="btn_like" onclick="mensage(this)">0 likes</button>
+        </div>
+        <p class="definition-text">Definición de la nueva palabra aquí.</p>
+    `;
+
+    // Agregar la nueva definición al contenedor
+    definitionContainer.appendChild(newDefinition);
+
+    // Eliminar el botón
+    button.remove();
+}
