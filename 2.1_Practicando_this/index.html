@@ -11,56 +11,47 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&quot;">
 <link rel="stylesheet" href="style.css">
 </head><body>
-    <!-- Contenedor principal de la página -->
     <div class="container">
-       
-        <!-- Sección superior, incluye el título, barra de búsqueda y botón de login -->
         <div class="top">
-            <h1 class="title">Dojonary</h1>  <!-- Título principal de la página -->
-            <input type="text" name="search" placeholder="Search" class="search"> <!-- Barra de búsqueda -->
-            <button class="btn_login" onclick="">Login</button> <!-- Botón de inicio de sesión -->
+            <h1 class="title">Dojonary</h1>
+            <input type="text" name="search" placeholder="Search" class="search">
+            <button class="btn_login" onclick="">Login</button>
         </div>
-       
-        <!-- Contenedor principal con dos columnas (row) -->
-        <div class="row">
-           
-            <!-- Primera columna que ocupa dos tercios del ancho -->
+        <div class="row">            
             <div class="flex-2">
-               
-                <!-- Primera definición -->
+
                 <div class="box_definition">
                     <div class="left">
-                        <h1>ninja</h1> <!-- Palabra definida -->
-                        <p><em>noun</em></p> <!-- Tipo de palabra (sustantivo) -->
-                        <p>Plural: <em>ninjas</em></p> <!-- Forma plural -->
-                        <button class="btn_like" onclick="mensage(this)">13 likes</button> <!-- Botón para "me gusta" -->
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn_like" onclick="mensage(this)">13 likes</button>
                     </div>
-                    <p class="definition-text">A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu">ninjutsu</a></p> <!-- Definición -->
+                    <p class="definition-text">A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu">ninjutsu</a></p>
                 </div>
 
-                <!-- Segunda definición -->
                 <div class="box_definition">
                     <div class="left">
-                        <h1>ninja</h1> <!-- Palabra repetida -->
-                        <p><em>noun</em></p> <!-- Tipo de palabra (sustantivo) -->
-                        <p>Plural: <em>ninjas</em></p> <!-- Forma plural -->
-                        <button class="btn_like" onclick="mensage(this)">37 likes</button> <!-- Botón para "me gusta" -->
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn_like" onclick="mensage(this)">37 likes</button>
                     </div>
-                    <p class="definition-text">A <a href="https://en.wikipedia.org/wiki/Programmer">programmer</a> who breaks down problems with <a href="https://en.wikipedia.org/wiki/Zen">zen</a>-like focus</p> <!-- Definición alternativa -->
+                    <p class="definition-text">A <a href="https://en.wikipedia.org/wiki/Programmer">programmer</a> who breaks down problems with <a href="https://en.wikipedia.org/wiki/Zen">zen</a>-like focus</p>
                 </div>
             </div>
 
-            <!-- Segunda columna que ocupa un tercio del ancho -->
+           
             <div class="flex-1">
                 <div class="box">
-                    <h2>Dojonary is defined by YOU</h2> <!-- Texto promocional -->
-                    <button class="btn_add" onclick="addDefinition(this)">Add Definition</button> <!-- Botón para añadir una nueva definición -->
+                    <h2>Dojonary is defined by YOU</h2>
+                    <button class="btn_add" onclick="addDefinition(this)">Add Definition</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Inclusión del archivo de JavaScript externo -->
+    
     <script src="script.js"></script>
 </body>
 </html>
