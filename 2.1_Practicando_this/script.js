@@ -36,7 +36,7 @@ function addDefinition(button) {
     newDefinition.className = 'box_definition';
     newDefinition.innerHTML = `
         <div class="left">
-            <h1>nueva palabra</h1>
+            <h1>nueva definición</h1>
             <p><em>noun</em></p>
             <p>Plural: <em>nuevas palabras</em></p>
             <button class="btn_like" onclick="mensage(this)">0 likes</button>
